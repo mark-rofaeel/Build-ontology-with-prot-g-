@@ -1,0 +1,827 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has-End-Date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has-End-Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has-Start-Date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has-Start-Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has_Disease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has_Disease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has_Test -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Has_Test">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Major -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Major">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Major"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Minor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Minor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Minor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Moderate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Moderate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Moderate"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Take_Medication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Take_Medication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Treated_By -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Treated_By">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#hasInteractionOn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Dis.Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Dis.Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doc.Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doc.Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Item.Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Item.Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measuremnt.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measuremnt.Value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Med.Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Med.Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Med.Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Med.Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pat.ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pat.ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pat.Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pat.Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Tes.Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Tes.Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MeasurmentA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MeasurmentA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MeasurmentB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MeasurmentB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Treated_By"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Treated_By"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Measurment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#TestA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#TestA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#TestB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#TestB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Test"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Acetaminophen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Acetaminophen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#02-03-2021"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ahmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <untitled-ontology-6:Has_Disease rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pyrexia"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Clopidogrel"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:Treated_By rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah"/>
+        <untitled-ontology-6:Pat.ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</untitled-ontology-6:Pat.ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Amlodipine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Amlodipine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Rabeprazole"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Rabeprazole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Asprin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Asprin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxacin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxacin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Theophylline"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Tramadol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxcin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxcin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Prednisolone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Clopidogrel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Clopidogrel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-03-2021"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Rabeprazole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diabetes_Mellitus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diabetes_Mellitus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diclofenac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diclofenac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Spironolactone"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Amlodipine"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Amlodipine"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Asprin"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Asprin"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Gamal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Gamal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <untitled-ontology-6:Has_Disease rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Hypertension"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal"/>
+        <untitled-ontology-6:Treated_By rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah"/>
+        <untitled-ontology-6:Pat.ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-6:Pat.ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Hypertension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ibrahim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ibrahim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <untitled-ontology-6:Has_Disease rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diabetes_Mellitus"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Theophylline"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Tramadol"/>
+        <untitled-ontology-6:Treated_By rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah"/>
+        <untitled-ontology-6:Pat.ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-6:Pat.ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForAhmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-03-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#03-03-2021"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#23-03-2021"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalpril"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ischemic_Heart_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ischemic_Heart_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#10-02-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-02-2021"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Nada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Nada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <untitled-ontology-6:Has_Disease rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ischemic_Heart_Disease"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxcin"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#InsulinForNada"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Prednisolone"/>
+        <untitled-ontology-6:Treated_By rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah"/>
+        <untitled-ontology-6:Pat.ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-6:Pat.ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Prednisolone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Prednisolone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-03-2021"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxcin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pyrexia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Pyrexia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Rabeprazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Rabeprazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Clopidogrel"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Aspirin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-03-2021"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Acetaminophen"/>
+        <untitled-ontology-6:Minor rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diclofenac"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal"/>
+        <untitled-ontology-6:Moderate rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Acetaminophen"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diclofenac"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForGamal"/>
+        <untitled-ontology-6:hasInteractionOn rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Saber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Saber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Patient"/>
+        <untitled-ontology-6:Has_Disease rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Diabetes_Mellitus"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Acetaminophen"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#MetforminForSaber"/>
+        <untitled-ontology-6:Take_Medication rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ranitidine"/>
+        <untitled-ontology-6:Treated_By rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah"/>
+        <untitled-ontology-6:Pat.ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-6:Pat.ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Salah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Spironolactone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Spironolactone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Enalapril"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Theophylline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Theophylline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#06-03-2021"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxacin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Tramadol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Tramadol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Medication"/>
+        <untitled-ontology-6:Has-End-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-04-2021"/>
+        <untitled-ontology-6:Has-Start-Date rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-03-2021"/>
+        <untitled-ontology-6:Major rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Ciprofloxacin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-02-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-02-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#01-04-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#02-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#02-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#03-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#03-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-04-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#05-04-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#06-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#06-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#10-02-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#10-02-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-04-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#15-04-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-04-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#20-04-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#23-03-2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#23-03-2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2021/11/untitled-ontology-6#Date"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
